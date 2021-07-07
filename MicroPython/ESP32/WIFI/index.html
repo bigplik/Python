@@ -1,0 +1,24 @@
+//index.html - to check esp32 micropython
+
+html = """<html>
+    <head> 
+        <title>Bzykanko?</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="data:,">
+        <style>html{font-family: Helvetica; display:inline-block; margin: 0px auto; text-align: center;}
+            h1{color: #0F3376; padding: 2vh;}p{font-size: 1.5rem;}
+                .button{display: inline-block; background-color: #4286f4; border: none; 
+                border-radius: 4px; color: white; padding: 16px 40px; text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer;}
+                .button2{background-color: #e7bd3b;}
+                .button3{background-color: aqua;}
+        </style>
+    </head>
+    <body> 
+        <h1>Bzykanko?</h1> 
+            <p>Odpowiedź: <strong>""" + gpio_state + """</strong></p>
+            <p><a href="on"><button class="button">NIE</button></a></p>
+            <p><a href="off"><button class="button button2">TAK</button></a></p>
+            <p><a href="2w1"><button class="button button3">2w1</button></a></p>
+    </body>
+</html>"""
+
